@@ -72,7 +72,6 @@ void print_tcp_packet(char* buffer, int size)
     iphdrlen = iph->ihl*4;
      
     struct tcphdr *tcph=(struct tcphdr*)(buffer + iphdrlen);
-             
     fprintf(logfile,"\n\n***********************TCP Packet*************************\n");    
          
     print_ip_header(buffer,size);
